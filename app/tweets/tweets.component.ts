@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Tweet } from './tweet.model';
 import { DevitTweetComponent } from './tweet.component';
+import * as io from 'socket.io-client'
 
 @Component({
     moduleId: module.id,
@@ -8,9 +9,21 @@ import { DevitTweetComponent } from './tweet.component';
     templateUrl : `tweets.component.html`,
     directives: [DevitTweetComponent]  
 })
-export class DevitTweetsComponent{
+export class DevitTweetsComponent implements OnInit{ 
     tweets:Tweet[];
     constructor(){
         this.tweets = [];
+    }
+    
+    ngOnInit() { 
+        var socket = io('http://localhost:3000');
+        socket.on('connect', function(){
+            console.log('connect')
+        });
+        socket.emit('tweet-io:start', true);
+        socket.on('tweet-io:tweets', function(data:any){
+            console.log(data);
+            this.tweets = this.tweets.concat(data);
+        }.bind(this));    
     }
 }
