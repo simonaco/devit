@@ -22,7 +22,6 @@ export class DevitTweetsComponent implements OnInit{
         });
         socket.emit('tweet-io:start', true);
         socket.on('tweet-io:tweets', function(data:any){
-            console.log(data);
             this.tweets = this.tweets.concat(data);
         }.bind(this));    
     }
