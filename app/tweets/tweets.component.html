@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-offset-3 col-md-6">
             <span *ngFor="let tweet of tweets"> 
-                tweet.text
+                <tweet [tweet]=tweet></tweet>
             </span>   
          </div> 
     </div>
