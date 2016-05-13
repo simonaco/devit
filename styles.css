@@ -1,0 +1,17 @@
+html {
+	overflow-y: scroll;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #F2F2F2;
+	font-size: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6{
+ 	font-family: 'Varela Round', sans-serif;
+}
