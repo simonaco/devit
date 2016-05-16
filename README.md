@@ -1,6 +1,4 @@
-# Angular 2 Demo from ngConf 2016
-
-[View the presentation here](https://www.youtube.com/watch?v=WAPQF_GA7Qg&index=2&list=PLOETEcp3DkCq788xapkP_OU-78jhTf68j)
+# Angular 2 Demo from devit 2016
 
 Clone it and run it!
 
@@ -8,7 +6,4 @@ Clone it and run it!
 npm install
 npm start
 ```
-
-
-[View the slides here](https://docs.google.com/presentation/d/1-WxJ-gncWVBOyXWJvh4vjhXPns_Ohy6iCzhZ0OL2jes/edit?usp=sharing)
 
