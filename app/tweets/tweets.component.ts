@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Tweet } from './tweet.model';
 import { DevitTweetComponent } from './tweet.component';
 import * as io from 'socket.io-client'
+import { ReversePipe } from './reverse.pipe.component';
 
 @Component({
     moduleId: module.id,
     selector:"devit-tweets",
     templateUrl : `tweets.component.html`,
-    directives: [DevitTweetComponent]  
+    directives: [DevitTweetComponent],
+    pipes: [ReversePipe]  
 })
 export class DevitTweetsComponent implements OnInit{ 
     tweets:Tweet[];
