@@ -1,20 +1,17 @@
 import { Component } from '@angular/core';
-import { DevitTweetsComponent } from './tweets/tweets.component';
+import { TweetsComponent } from './tweets/tweets.component';
+
 @Component({
     moduleId: module.id,
     selector:"my-app",
-    template : `
-        <h1>{{title}}</h1>
-        <devit-tweets></devit-tweets>
+    template : `{{title}}
+           <tweets></tweets>
     `,
-    directives: [DevitTweetsComponent] 
+    directives: [TweetsComponent]
 })
-export /**
- * AppComponent
- */
-class AppComponent {
-    title:string;
-    constructor() {
-        this.title = "Hello Devit!!"
-    }
+export class AppComponent {
+   title:string;
+   constructor(){
+       this.title = "Hello Devit conf!!!"
+   }
 }
