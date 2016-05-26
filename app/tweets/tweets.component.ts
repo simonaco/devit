@@ -15,17 +15,15 @@ import { ReversePipe } from './reverse.pipe';
 })
 export class TweetsComponent implements OnInit {
     tweets:Tweet[];
+    btnDisabled:boolean;
     constructor(public tweetService:TweetService) { 
         this.tweets = [];
+        this.btnDisabled = false;
     }
     
     findTweets() {
         this.tweetService.getTweet().subscribe(tweets => this.tweets = tweets);
-        /*var socket = io("http://localhost:3000");
-        socket.emit("tweet-io:start", true);
-        socket.on("tweet-io:tweets", function(data:any){
-            this.tweets = this.tweets.concat(data);
-        }.bind(this));*/
+        this.btnDisabled = true;
     }
 
     ngOnInit() { 

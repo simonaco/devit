@@ -1,17 +1,26 @@
-[
-            {
-                "text":"Devit is awesome",
-                "user": {"name":"Devit", "image":"/img/logo-angular.png"},
-                "location": "Thessaloniki"
-            },
-            {
-                "text":"Angular 2 is the best",
-                "user": {"name":"Devit", "image":"/img/logo-angular.png"},
-                "location": "Anywhere"
-            },
-            {
-                "text":"Typescript is great!",
-                "user": {"name":"Devit", "image":"/img/logo-angular.png"},
-                "location": "Anywhere"
-            }
-        ]
+[  
+   {  
+      "text":"Devit is awesome",
+      "user":{  
+         "name":"Devit",
+         "image":"/img/logo-angular.png"
+      },
+      "location":"Thessaloniki"
+   },
+   {  
+      "text":"Angular 2 is the best",
+      "user":{  
+         "name":"Devit",
+         "image":"/img/logo-angular.png"
+      },
+      "location":"Anywhere"
+   },
+   {  
+      "text":"Typescript is great!",
+      "user":{  
+         "name":"Devit",
+         "image":"/img/logo-angular.png"
+      },
+      "location":"Anywhere"
+   }
+]
